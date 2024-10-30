@@ -20,8 +20,9 @@ export default function Page() {
           <div className="p-2">
             <RadialBarChart data={{
               color:"#0BC279",
-              label:"67/70",
-              series:[10]
+              label:"20/70",
+              title:"30%",
+              series:[30]
             }} />
           </div>
         </Card>
@@ -33,7 +34,8 @@ export default function Page() {
             <RadialBarChart data={{
               color:"#0BC279",
               label:"67/70",
-              series:[10]
+              title:"90%",
+              series:[90]
             }} />
           </div>
         </Card>
@@ -45,7 +47,8 @@ export default function Page() {
             <RadialBarChart data={{
               color:"#FFDF37",
               label:"67/70",
-              series:[10]
+              title:"90%",
+              series:[90]
             }} />
           </div>
         </Card>
@@ -60,7 +63,31 @@ export default function Page() {
           <div className="">
             <ScoreItem data={{
               title:"Flowering plants",
-              color:"bg-red-200",
+              color:"bg-yellow-200",
+              breakDown:{
+                percentage:"50%",
+                count:"15/30"
+              }
+            }}/>
+            <ScoreItem data={{
+              title:"Flowering plants",
+              color:"bg-red-100",
+              breakDown:{
+                percentage:"25%",
+                count:"8/30"
+              }
+            }}/>
+            <ScoreItem data={{
+              title:"Flowering plants",
+              color:"bg-green-300",
+              breakDown:{
+                percentage:"50%",
+                count:"15/30"
+              }
+            }}/>
+            <ScoreItem data={{
+              title:"Flowering plants",
+              color:"bg-green-100",
               breakDown:{
                 percentage:"10%",
                 count:"3/30"
@@ -68,18 +95,10 @@ export default function Page() {
             }}/>
             <ScoreItem data={{
               title:"Flowering plants",
-              color:"bg-red-200",
+              color:"bg-teal-100",
               breakDown:{
-                percentage:"17.33%",
-                count:"5/30"
-              }
-            }}/>
-            <ScoreItem data={{
-              title:"Flowering plants",
-              color:"bg-green-300",
-              breakDown:{
-                percentage:"67.33%",
-                count:"20/30"
+                percentage:"50%",
+                count:"15/30"
               }
             }}/>
           </div>
@@ -88,16 +107,32 @@ export default function Page() {
               title:"Flowering plants",
               color:"bg-red-200",
               breakDown:{
-                percentage:"10%",
-                count:"3/30"
+                percentage:"50%",
+                count:"15/30"
               }
             }}/>
             <ScoreItem data={{
               title:"Flowering plants",
-              color:"bg-amber-200",
+              color:"bg-purple-200",
               breakDown:{
-                percentage:"67.33%",
-                count:"20/30"
+                percentage:"50%",
+                count:"15/30"
+              }
+            }}/>
+            <ScoreItem data={{
+              title:"Flowering plants",
+              color:"bg-green-200",
+              breakDown:{
+                percentage:"50%",
+                count:"15/30"
+              }
+            }}/>
+            <ScoreItem data={{
+              title:"Flowering plants",
+              color:"bg-green-200",
+              breakDown:{
+                percentage:"50%",
+                count:"15/30"
               }
             }}/>
           </div>
