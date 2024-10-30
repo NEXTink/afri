@@ -3,7 +3,7 @@ import { FilterIcon } from "@/app/assets/dashboard/icons";
 import { QuestionInterface } from "@/components/features/questions/QuestionGenerator";
 import QuestionItem from "@/components/features/questions/QuestionItem";
 import QuestionNav from "@/components/features/questions/QuestionNav";
-import React, { useState } from "react";
+import React from "react";
 
 export default function Page() {
   const questions: QuestionInterface[] = [
@@ -34,7 +34,7 @@ export default function Page() {
 
       <div className="mt-6 flex flex-col gap-8">
         {questions.map((e, i) => (
-          <QuestionItem data={e} key={e.id} id={e.id} count={i + 1} />
+          <QuestionItem data={e} key={e.id}  count={i + 1} />
         ))}
       </div>
     </div>
