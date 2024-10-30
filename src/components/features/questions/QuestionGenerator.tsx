@@ -11,7 +11,6 @@ export interface QuestionInterface {
 export default function QuestionGenerator({
   type,
   options,
-  answer,
   id,
   image,
   title,
