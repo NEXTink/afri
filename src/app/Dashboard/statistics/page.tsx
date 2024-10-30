@@ -20,9 +20,10 @@ export default function Page() {
           <div className="p-2">
             <RadialBarChart data={{
               color:"#0BC279",
-              label:"20/70",
-              title:"30%",
-              series:[30]
+              label:"30 / 30",
+              title:"100%",
+              series:[100],
+                showTotal:true
             }} />
           </div>
         </Card>
@@ -33,9 +34,10 @@ export default function Page() {
           <div className="p-2">
             <RadialBarChart data={{
               color:"#0BC279",
-              label:"67/70",
-              title:"90%",
-              series:[90]
+              label:"22 / 30",
+              title:"75%",
+              series:[75],
+              showTotal:true
             }} />
           </div>
         </Card>
@@ -46,9 +48,10 @@ export default function Page() {
           <div className="p-2">
             <RadialBarChart data={{
               color:"#FFDF37",
-              label:"67/70",
+              label:"",
               title:"90%",
-              series:[90]
+              series:[90],
+              showTotal:false
             }} />
           </div>
         </Card>
@@ -59,7 +62,7 @@ export default function Page() {
           SCORE PER QUESTION TOPIC(9)
         </h2>
 
-        <div className="grid grid-cols-2 mt-4 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 mt-4 gap-8">
           <div className="">
             <ScoreItem data={{
               title:"Flowering plants",

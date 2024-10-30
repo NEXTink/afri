@@ -4,7 +4,7 @@ import { QuestionInterface } from "@/components/features/questions/QuestionGener
 import QuestionItem from "@/components/features/questions/QuestionItem";
 import QuestionNav from "@/components/features/questions/QuestionNav";
 import React from "react";
-
+// import imgQ from ""
 export default function Page() {
   const questions: QuestionInterface[] = [
     {
@@ -13,6 +13,7 @@ export default function Page() {
       type: "single-choice",
       options: ["Answer 1", "Answer 2", "Answer 3", "Answer 4"],
       id: "dfbahdshjbfjdhsbuskd",
+      
     },
     {
       title:
@@ -20,6 +21,7 @@ export default function Page() {
       type: "multi-choice",
       options: ["Answer 1", "Answer 2", "Answer 3", "Answer 4"],
       id: "sbfkhabsjbsafjlkwuydusiw",
+      image:'/img_afri.png'
     },
   ];
   return (

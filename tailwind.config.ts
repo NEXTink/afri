@@ -13,6 +13,7 @@ const config: Config = {
         foreground: "var(--foreground)",
         primary:"var(--primary)",
         primaryHover:"var(--primary-hover)",
+        primaryHover2:"var(--primary-hover2)",
         textGray:"var(--text-gray)",
         textGray2:"var(--text-gray2)",
       },

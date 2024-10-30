@@ -3,9 +3,7 @@
 import { usePathname } from 'next/navigation'
 
 import {
- 
-    BarChatIcon,
-
+  BarChatIcon,
   ClockIcon,
   CogIcon,
   DocumentCheckIcon,
@@ -21,18 +19,13 @@ import React, {
 } from "react";
 import SidebarItem from "./SidebarItem";
 export default function Sidebar() {
-    const pathname = usePathname();
-    console.log('====================================');
-    console.log(pathname);
-    console.log('====================================');
+  const pathname = usePathname();
   return (
-    <aside className="col-span-3 mr-4 bg-white px-8 py-8 min-h-dvh flex-col flex gap-8">
+    <aside className="col-span-3 sticky md:static top-0 left-0  mr-4 bg-white px-4 py-8 min-h-dvh flex-col flex gap-8">
       <section>
-        <h2 className="text-xl font-semibold">Test configuration</h2>
+        <h2 className="text-xl  font-semibold">Test configuration</h2>
         <ul className="mt-4 flex flex-col gap-2">
           {testConfigList.map(({ title, path, icon: Icon }) => {
-           
-
             return   <SidebarItem key={title} title={title} path={path} icon={Icon} isActive={pathname===path}/>
           })}
         </ul>

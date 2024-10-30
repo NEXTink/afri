@@ -33,6 +33,7 @@ export default function QuestionItem({ data ,count}: { data: QuestionInterface,c
           title={data.title}
           options={data.options}
           type={data.type}
+          image={data.image}
         />
       </div>
     </div>

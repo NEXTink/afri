@@ -8,7 +8,8 @@ interface RadialBarChartData{
     color:string,
     series:number[],
     label?:string ,
-    title:string
+    title:string,
+    showTotal?:boolean
 }
 const RadialBarChart = ({data}:{data:RadialBarChartData}) => {
   const options:ApexOptions = {
@@ -29,7 +30,7 @@ const RadialBarChart = ({data}:{data:RadialBarChartData}) => {
             show: true, // Hides the label outside the ring
           },
           value:{
-            show:true,
+            show:data?.showTotal,
             fontSize:"12px",
           },
           total: {
